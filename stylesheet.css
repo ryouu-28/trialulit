@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    
+}
+ul {
+   
+    display: flex;
+    flex: 1;
+    max-width: 100%;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+}
+li {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    
+}
+.logo {
+    max-width: 20vh;
+    margin-left: 20px;
+}
+.donate {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color: red;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    padding: 10px 25px;
+    border-radius: 7px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+/*FIRST PAGE*/
+.firstpage {
+    background-image: url(img2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+}
+
+.firstpage .container {
+    flex-direction: column;
+    position: relative;
+    z-index: 0;
+    justify-content: end;
+    align-items: center;
+
+
+}
+.img1 {
+    width: 180vh;
+    max-width: 100%;
+    height: auto;
+    color: white;
+    opacity: 0;
+    
+    
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.first-text {
+    position: absolute;
+    color:aliceblue;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    font-size: 5vw;
+    text-transform: uppercase;
+    max-width: 65%;
+    text-shadow: 2px 2px 8px #050505; 
+    bottom: 7vw;
+    
+}
+
+.first-text .second {
+    font-size: 1.2vw;
+    font-weight: 800;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    bottom: 2.6vw;
+    text-shadow: 2px 2px 8px #050505; 
+}
+
+/*SECOND PAGE*/
+.secondpage {
+    background-color: #1E1D1D;
+    overflow: hidden;
+}
+.secondpage .container {
+    padding: 5rem 2.5rem;
+    gap: 5vw;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-basis: 100%;
+}
+
+.img2 {
+    max-width: 40vw;
+    min-width: 25vw;
+    height: auto;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+h2 {
+    font-family: "Anton", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-size: 4vw;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+.learn {
+    background-color: red;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 600;
+    border: none;
+    font-size: 2vh;
+    padding: 1vh 1.6vw;
+    color: white;
+    width: max-content;
+    cursor: pointer;
+    
+}
+
+.learn:hover {
+    background-color: white;
+    transition: all 0.7s ease-out;
+    color: black;
+}
+
+
+/*3rd Page*/
+.thirdpage {
+    background-color: #1E1D1D;
+    padding: 5vh;
+}
+
+.contain {
+    display: flex;
+    gap: 1.5em;
+    flex: 1;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.thirdpage .card {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.thirdpage .card:hover {
+    cursor: pointer;
+    background-color: white;
+    transform: scale(1.05);
+    transition: all 1s ease;
+}
+.card-image {
+    height: 30vw;
+    width: 100%;
+    box-shadow: 2px 2px 20px rgb(78, 75, 75);
+}
+
+.thirdpage h3 {
+    font-size: 1.7vw;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: white;
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+}
+h3:hover {
+    color: black;
+    background-color: white;
+    transition: all 1s ease;
+}
+.intro {
+    position: absolute;
+    background-color: red;
+    width: 100%;
+    bottom: 0px;
+}
+
+.thirdpage p {
+    font-size: 0.7vw;
+    font-family: "League Sparta", sans-serif;
+    font-weight: 200;
+}
+.child-1 {
+    background-image: url(img5.jpg);
+    background-size: cover;
+    background-position: center;
+   
+}
+.child-2 {
+    background-image: url(img6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.child-3 {
+    background-image: url(img7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card2 {
+    margin-top: 30px;
+}
+
+
+@media (max-width: 700px) {
+    .contain {
+        flex-direction: column;
+    }
+    .intro {
+        position: absolute;
+        width: 20%;
+
+    }
+    .thirdpage h3 {
+        font-size: 2.2vw;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        text-transform: capitalize;
+        color: white;
+        padding: 50px 10px;
+        background-color: red;
+    }
+    .card2 {
+        margin-top: 10px;
+    }
+}
